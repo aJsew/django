@@ -1,0 +1,38 @@
+[
+  {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+      "name": "Avocado",
+      "description": "The avocado is a tree, long thought to have originated in South Central Mexico, classified as a member of the flowering plant family Lauraceae.",
+      "cost": "100"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+      "name": "Banana",
+      "description": "A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa.",
+      "cost": "50"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+      "name": "Onion",
+      "description": "The onion also known as the bulb onion or common onion, is a vegetable that is the most widely cultivated species of the genus Allium.",
+      "cost": "75"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+      "name": "Potato",
+      "description": "The potato is a starchy, tuberous crop from the perennial nightshade Solanum tuberosum",
+      "cost": "25"
+    }
+  }
+]
