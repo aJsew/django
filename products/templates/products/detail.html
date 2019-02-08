@@ -1,0 +1,15 @@
+{% extends 'server/master.html' %}
+
+{% block page_content %}
+<div class="product_item">
+    <h1 class="product_name">
+        {{ object.name }}
+    </h1>
+    <span class="product_description">
+        {{ object.description }}
+    </span>
+    <span class="product_cost">
+        {{ object.cost }}
+    </span>
+</div>
+{% endblock %}
