@@ -1,0 +1,80 @@
+{% extends 'server/master.html' %}
+{% block page_content %}
+<div class="productss">
+    {% for object in object_list %}
+    <div class="propuct_item">
+        <span class="propuct_item-name">
+            {{ object.name }}
+        </span>
+        <span class="propuct_item-description">
+            {{ object.description }}
+        </span>
+        <span class="propuct_item-cost">
+            {{ object.cost }}
+        </span>
+        <a href="{% url 'detail' pk=object.id %}" class="">CCblJlKA HA {{ object.name|upper }}</a>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="container">
+    <div class="header2">
+        <a href="/"><img class="logo" src="/static/img/logo.png" alt="logo"></a>
+        <ul class="menu">
+            <li><a href="/">HOME</a></li>
+            <li><a href="/catalog/">PRODUCTS</a></li>
+            <li><a href="#">HISTORY</a></li>
+            <li><a href="#">SHOWROOM</a></li>
+            <li><a href="/contact/">CONTACTS</a></li>
+        </ul>
+        <div class="opr"><h1>Our Products Range</h1></div>
+    </div>
+    <div class="featured2">
+        <ul>
+            <li>All</li>
+            <li>Home</li>
+            <li>Office</li>
+            <li>Furniture</li>
+            <li>Modern</li>
+            <li>Classic</li>
+        </ul>
+    </div>
+    <div class="row_1_2">
+        <a href="/product_details/"><img src="/static/img/product-5.jpg" alt=""></a>
+        <a href="/product_details/"><img src="/static/img/product-6.jpg" alt=""></a>
+        <a href="/product_details/"><img src="/static/img/product-7.jpg" alt=""></a>
+    </div>
+    <div class="row_2_2">
+        <a href="/product_details/"><img src="/static/img/product-8.jpg" alt=""></a>
+        <a href="/product_details/"><img src="/static/img/product-9.jpg" alt=""></a>
+        <a href="/product_details/"><img src="/static/img/product-10.jpg" alt=""></a>
+    </div>
+    <div class="row_1_2">
+        <a href="/product_details/"><img src="/static/img/product-5.jpg" alt=""></a>
+        <a href="/product_details/"><img src="/static/img/product-6.jpg" alt=""></a>
+        <a href="/product_details/"><img src="/static/img/product-7.jpg" alt=""></a>
+    </div>
+    <div class="row_2_2">
+        <a href="/product_details/"><img src="/static/img/product-8.jpg" alt=""></a>
+        <a href="/product_details/"><img src="/static/img/product-9.jpg" alt=""></a>
+        <a href="/product_details/"><img src="/static/img/product-10.jpg" alt=""></a>
+    </div>
+    <div class="clear"></div>
+    <div class="marg"></div>
+    <img src="/static/img/load.png" alt="load" class="load">
+    <div class="promo">
+        <div class="promo_1">
+            <h3>Exclusive</h3>
+            <h2>Fishnet Chair</h2>
+            <p>Seat and back with upholstery made of cold cure foam.<br>Steel frame, available in matt powder-coated black or highly polished chrome.</p>
+            <a class="button" href="/product_details/">Order US</a>
+        </div>
+        <div class="promo_2">
+            <h3>Exclusive</h3>
+            <h2>Fishnet Chair</h2>
+            <p>Seat and back with upholstery made of cold cure foam.<br>Steel frame, available in matt powder-coated black or highly polished chrome.</p>
+            <a class="button" href="/product_details/">Order US</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,99 @@
+{% extends 'server/master.html' %}
+
+{% block page_content %}
+    <div class="container">
+        <div class="header">
+            <a href="/"><img class="logo" src="/static/img/logo.png" alt="logo"></a>
+            <ul class="menu">
+                <li><a href="/">HOME</a></li>
+                <li><a href="/catalog/">PRODUCTS</a></li>
+                <li><a href="#">HISTORY</a></li>
+                <li><a href="#">SHOWROOM</a></li>
+                <li><a href="/contact/">CONTACTS</a></li>
+            </ul>
+            <div class="slider_text">
+                <h3>TRENDING</h3>
+                <h1>Fishnet Chair</h1>
+                <p>Seat and back with upholstery made of cold cure foam. Steel frame,<br> available in matt powder-coated black or highly polished chrome.</p>
+                <a class="button" href="product_details.html">Order Us</a>
+                <div class="slider">
+                <img src="/static/img/active.png" alt="active" class="active">
+                </div>
+            </div>
+
+
+        </div>
+<div class="container">
+    <div class="featured">
+        <ul>
+            <li>Featured</li>
+            <li>New</li>
+        </ul>
+        <a class="explore" href="catalog.html">EXPLORE ALL</a>
+        <div class="featured_product">
+            <a href="product_details.html"><img src="/static/img/product-1.jpg" alt=""></a>
+            <a href="product_details.html"><img src="/static/img/product-2.jpg" alt=""></a>
+            <a href="product_details.html"><img src="/static/img/product-3.jpg" alt=""></a>
+            <a href="product_details.html"><img src="/static/img/product-4.jpg" alt=""></a>
+        </div>
+    </div>
+    <div class="promo">
+        <div class="promo_1">
+            <h3>Exclusive</h3>
+            <h2>Fishnet Chair</h2>
+            <p>Seat and back with upholstery made of cold cure foam.<br>Steel frame, available in matt powder-coated black or highly polished chrome.</p>
+            <a class="button" href="product_details.html">Order US</a>
+        </div>
+        <div class="promo_2">
+            <h3>Exclusive</h3>
+            <h2>Fishnet Chair</h2>
+            <p>Seat and back with upholstery made of cold cure foam.<br>Steel frame, available in matt powder-coated black or highly polished chrome.</p>
+            <a class="button" href="product_details.html">Order US</a>
+        </div>
+    </div>
+    <div class="trending_products">
+        <div>
+            <h2>Trending Products</h2>
+            <a class="explore" href="catalog.html">EXPLORE ALL</a>
+        </div>
+        <div class="row_1">
+            <a href="product_details.html"><img src="/static/img/product-5.jpg" alt=""></a>
+            <a href="product_details.html"><img src="/static/img/product-6.jpg" alt=""></a>
+            <a href="product_details.html"><img src="/static/img/product-7.jpg" alt=""></a>
+        </div>/static/
+        <div class="row_2">
+            <a href="product_details.html"><img src="/static/img/product-8.jpg" alt=""></a>
+            <a href="product_details.html"><img src="/static/img/product-9.jpg" alt=""></a>
+            <a href="product_details.html"><img src="/static/img/product-10.jpg" alt=""></a>
+        </div>
+    </div>
+    <div class="hot_deal">
+        <div class="slider_text"><h3 class="slider_hot_deal">HOT DEAL</h3><h1>Fishnet Chair</h1><p>Seat and back with upholstery made of cold cure foam. <br>Steel frame, available in matt powder-coated black
+            or highly polished chrome.</p>
+            <a class="button" href="product_details.html">Order Us</a>
+            <div class="slider"><img src="/static/img/active.png" alt="active" class="active"></div>
+        </div>
+    </div>
+    <div class="promo_3">
+        <div class="slider_text_promo_3"><h3>EXCLUSIVE</h3><h1>Fishnet Chair</h1><p>Seat and back with upholstery made of cold cure<br> foam. Steel frame, available in matt</p>
+        </div>
+    </div>
+    <div class="foto_block"><img src="/static/img/product-2-sm.png" alt="product2"><img src="/static/img/product-3-sm.jpg" alt="product3"><img src="/static/img/product-4-sm.jpg" alt="product4"><img src="/static/img/product-5-sm.jpg" alt="product5">
+    </div>
+
+    <div class="mobile_app">
+        <div class="slider_text_mobile_app">
+            <h3>MOBILE APP</h3>
+            <h1>Find. Follow.<br>Favorite.</h1>
+            <p>Save your favorites and share your style.</p>
+        </div>
+        <div class="download">
+            <img src="/static/img/app-store.jpg" alt="app-store">
+            <img src="/static/img/google-play.jpg" alt="google-play">
+        </div>
+    </div>
+    <span class="username">
+        {{ name }}
+    </span>
+</div>
+{% endblock %}
