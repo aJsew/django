@@ -1,0 +1,22 @@
+{% extends 'server/master.html' %}
+
+{% block page_content %}
+<div class="product_item">
+    <h1 class="product_name">
+        {{ object.name|title }}
+    </h1>
+    <span class="product_description">
+        {{ object.description }}
+    </span>
+</div>
+
+<div>
+    {% for object in products %}
+    {% include 'server/product.html' with id=object.pk name=object.name description=object.description cost=object.cost %}
+    {% endfor %}
+</div>
+
+{% include 'server/pagination.html' with page=products page_range=products.paginator.page_range %}
+
+
+{% endblock %}

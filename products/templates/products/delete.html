@@ -1,0 +1,20 @@
+{% extends 'server/master.html' %}
+
+{% load static %}
+
+{% block page_title %}
+Delete product
+{% endblock %}
+
+{% block page_static %}
+{% endblock %}
+
+{% block page_content %}
+
+<form method="POST">
+    {% csrf_token %}
+    <span>Запись о {{ object.name }} будет удалена.</span>
+    <input type="submit">
+</form>
+
+{% endblock %}

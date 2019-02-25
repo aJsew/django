@@ -1,0 +1,20 @@
+<div class="productss">
+    <div class="propuct_item">
+        <span class="propuct_item-name">
+            {{ name }}
+        </span>
+        <span class="propuct_item-description">
+            {{ description }}
+        </span>
+        {% if cost %}
+        <span>
+            {{ cost }}
+        </span>
+        {% else %}
+        <span>
+            Значение отсутствует
+        </span>
+        {% endif %}
+        <a href="{% url 'products:detail' pk=object.id %}" class="">CCblJlKA HA {{ name|upper }}</a>
+    </div>
+</div>
